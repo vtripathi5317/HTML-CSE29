@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
-    <form action="./response.html"target="_blank" name="biodata"
-    method="get"></form>
+    <form action="./response.html" target="_blank" name="Biodata" method="get">
     <fieldset>
-        <legend>biodata</legend>
+        <legend>Biodata</legend>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"
-placeholder="enter your name" required>
-<br>
-<lable for="dob">DOB:</lable>    
-<input type="data" id="dob" name="dob" 
-placeholder="enter your dob" required>
-<br>
-<lable for="phone">PHONE:
-    <input type="phone" id="phone" name="phone" 
-    placeholder="enter your number" required>
-    </label>
-    <br>
-    <label for="gender">GENDER:
-        <input type="radio" id="male" name="gender" value="male" required>
-        <lable for="male">Male:</lable>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <lable for="female">FEMALE:</lable>
-    </label>
-    </label>
-    <br>
-    <lable for="email">EMAIL:
-        <input type="email" id="email" name="enter your email" required>
-    </lable>
-    <br>
-    <label for="check">vehicle you have:
-        <input type="checkbox" id="bike" name="bike" value="bike" required>
-        <lable for="bike">Bike</lable>
-    <input type="checkbox" id="car" name="car" value="car" required>
-    <label for="car">CAR</labke>
-   </label>
-   <br>
-   <lable for="pass">PASSWORD:
-    <input type="password" id="password" name="password" value="password" required>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob" required>
+        <br><br>
+        <label for="tel">Phone:</label>
+        <input type="tel" name="tel" id="tel" placeholder="Enter your phone number" required>
+        <br><br>
+        <label for="attempt">Attempt:</label>
+        <input type="number" name="attempt" id="attempt" min="1" max="5" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <label for="check">Vechicles you have</label>
+        <input type="checkbox" name="vechicle 1" id="bike" value="Bike">
+        <label for="bike">Bike</label>
+        <input type="checkbox" name="vechicle 1" id="bike" value="Bike">
+        <label for="car">Car</label>
+        <br><br>
+        <label for="lang">Select your programming language</label>
+        <select name="lang" id="lang">
+            <option value="">Select Your Language</option>
+            <optgroup label="Programming Language">
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            </optgroup>
+            <optgroup label="Frontend Technologies">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+             </optgroup>
+        </select>
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" required>
+        <br><br>
+        <label for="appointment">Appointment:</label>
+        <input type="time" name="appointment" id="appointment">
+        <br><br>
+        <label for="upload">Upload File:</label>
+        <input type="file" name="upload" id="upload" required>
+        <br><br>
+        <label for="add">Address:</label>
+        <textarea name="text" id="add" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
 
-   </label>
-   <br>
-   <lable for="appointment">appointment:
-    <input type="time" id="appointment" name="appointment" required>
-   </lable>
-   <br>
-   <lable for="file">FILE UPLOAD:
-    <input type="file" id="file" name="file" required>
-   </lable>
-   <br>
-   <input type="submit" id="submit" name="submit" />
-   <input type="reset" id="reset" />
-
-</fieldset>
+        
+    </fieldset>
+</form>
+    
 </body>
 </html>
